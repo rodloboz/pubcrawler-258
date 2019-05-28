@@ -181,3 +181,12 @@ $buttonHeight: 44px;
     color: white;
     background: $pinColor;
 }
+
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}

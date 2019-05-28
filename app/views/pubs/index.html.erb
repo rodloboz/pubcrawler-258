@@ -5,3 +5,10 @@
       </div>
     <% end %>
 </div>
+
+<div
+  id="map"
+  class="search-map"
+  data-markers="<%= @markers.to_json %>"
+  data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
+></div>

@@ -24,4 +24,13 @@ class Pub < ApplicationRecord
   validates :name, presence: true, uniqueness: true
   validates :address, :description, :photo, presence: true
   validates :district, presence: true, inclusion: { in: DISTRICTS }
+
+  geocoded_by :address
+  after_validation :geocode, if: :will_save_change_to_address?
 end
+
+
+
+
+
+
